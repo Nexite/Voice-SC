@@ -10,14 +10,19 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:voice-sc.helloWorld"
+		"onCommand:voice-sc.turnOnStream",
+		"onCommand:voice-sc.turnOffStream"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "voice-sc.helloWorld",
-				"title": "Hello World"
+				"command": "voice-sc.turnOnStream",
+				"title": "Turn On Stream"
+			},
+			{
+				"command": "voice-sc.turnOffStream",
+				"title": "Turn Off Stream"
 			}
 		]
 	},
